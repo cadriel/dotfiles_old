@@ -1,7 +1,4 @@
 syntax on               " Turn on vim syntax highlighting
-
-" These were form powerline - may need them again in the future.
-" set laststatus=2        " Always display the statusline in all windows
 set noshowmode          " Hide the default mode text (e.g., -- INSERT -- below the statusline)
 
 filetype off
@@ -78,3 +75,4 @@ let g:NERDSpaceDelims=1
 let g:CommandTMaxHeight=20
 let g:CommandTCancelMap='<Esc>'
 let g:CommandTAcceptSelectionTabMap='t'
+" let g:airline_powerline_fonts=1
