@@ -14,7 +14,9 @@ Installation is currently a couple of steps dependant on your intent;
 
 ### Setup and install dependencies
 
-This runs the install scripts you might have defined. You can run it periodically to ensure you have the latest changes applied. The script should already be in your path provided your already run `rake install`.
+This runs the install scripts you might have defined.
+You can run it periodically to ensure you have the latest changes applied.
+The script should already be in your path provided you've already run `rake install`.
 
 `~/.dotfiles/script/install`, will install any dependencies you've defined in the `<topic>/install.sh` files. This includes setting up any osx defaults in the `~/.dotfiles/osx/install.sh` script.
 
