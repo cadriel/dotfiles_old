@@ -7,9 +7,6 @@ set -g base-index 1
 # Easy config reload
 bind-key R source-file ~/.tmux.conf \; display-message "tmux.conf reloaded."
 
-# vi is good
-setw -g mode-keys vi
-
 # mouse behavior
 setw -g mode-mouse on
 set -g mouse-select-pane on
@@ -97,4 +94,5 @@ set-option -g repeat-time 0
 # client connected to *that window*. Much more reasonable.
 setw -g aggressive-resize on
 
-source-file ~/.tmux.conf.local
+if-shell "test -f ~/.tmuxline.conf" "source ~/.tmuxline.conf"
+# source-file ~/.tmux.conf.local

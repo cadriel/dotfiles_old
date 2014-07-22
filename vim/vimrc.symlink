@@ -1,5 +1,5 @@
-syntax on               " Turn on vim syntax highlighting
-set noshowmode          " Hide the default mode text (e.g., -- INSERT -- below the statusline)
+" Turn on vim syntax highlighting
+syntax on
 
 filetype off
 execute pathogen#infect()
@@ -66,8 +66,11 @@ colorscheme solarized
 " Enable basic mouse behavior such as resizing buffers.
 set mouse=a
 if exists('$TMUX')  " Support resizing in tmux
-    set ttymouse=xterm2
-    endif
+  set ttymouse=xterm2
+endif
+
+" Hide the default mode text (e.g., -- INSERT -- below the statusline)
+set noshowmode
 
 " plugin settings
 let g:ctrlp_match_window = 'order:ttb,max:20'
@@ -75,4 +78,5 @@ let g:NERDSpaceDelims=1
 let g:CommandTMaxHeight=20
 let g:CommandTCancelMap='<Esc>'
 let g:CommandTAcceptSelectionTabMap='t'
-" let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts=1
+let g:tmuxline_preset = 'full'
