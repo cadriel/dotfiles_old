@@ -1,6 +1,0 @@
-#! /bin/bash
-
-latest=$(git log --format="%H" -1)
-
-[[ -n "$(which pbcopy)" ]] && echo $latest | pbcopy
-echo $latest

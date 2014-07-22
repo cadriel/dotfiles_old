@@ -1,3 +1,3 @@
 alias reload!='. ~/.zshrc'
 alias h='cd ~/'
-alias c='cd ~/code'
+alias dcm='cd ~/Development/Dell/sources/dcm'
