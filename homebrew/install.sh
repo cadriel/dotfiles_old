@@ -11,8 +11,9 @@ then
   echo "  Installing Homebrew for you."
   ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)" > /tmp/homebrew-install.log
 fi
-        
+
 # Install homebrew packages
-brew install grc coreutils spark vim brew-cask git git-flow-avh tmux maven reattach-to-user-namespace python        
+brew install caskroom/cask/brew-cask
+brew install grc coreutils spark vim brew-cask git git-flow-avh tmux maven reattach-to-user-namespace python zsh
 
 exit 0
