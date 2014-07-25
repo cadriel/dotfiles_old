@@ -1,12 +1,17 @@
-# shortcut to this dotfiles path is $ZSH
+# shortcut to this dotfiles path is $DOTFILES
 export DOTFILES=$HOME/.dotfiles
 
+## Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
 # oh-my-zsh specifics
-export ZSH=$HOME/.oh-my-zsh
-export UPDATE_ZSH_DAYS=3
-ZSH_THEME="sorin"
-plugins=(grails mvn)
-source $ZSH/oh-my-zsh.sh
+# export ZSH=$HOME/.oh-my-zsh
+# export UPDATE_ZSH_DAYS=3
+# ZSH_THEME="sorin"
+# plugins=(grails mvn)
+# source $ZSH/oh-my-zsh.sh
 
 # source every .zsh file in this repo
 for config_file ($DOTFILES/**/*.zsh) source $config_file
