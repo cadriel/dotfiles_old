@@ -94,5 +94,8 @@ set-option -g repeat-time 0
 # client connected to *that window*. Much more reasonable.
 setw -g aggressive-resize on
 
-if-shell "test -f ~/.tmuxline.conf" "source ~/.tmuxline.conf"
+# Load our custom tmux theme configuration
+# if-shell "test -f ~/.dotfiles/tmuxcolors-dark.conf" "source ~/.dotfiles.tmuxcolors-dark.conf"
+if-shell "test -f ~/.dotfiles/tmux/tmuxcolors-dark.conf" "source ~/.dotfiles/tmux/tmuxcolors-dark.conf"
+
 # source-file ~/.tmux.conf.local
