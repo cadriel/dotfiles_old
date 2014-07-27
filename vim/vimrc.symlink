@@ -78,5 +78,5 @@ let g:NERDSpaceDelims=1
 let g:CommandTMaxHeight=20
 let g:CommandTCancelMap='<Esc>'
 let g:CommandTAcceptSelectionTabMap='t'
-let g:airline_powerline_fonts=1
+" let g:airline_powerline_fonts=1
 let g:tmuxline_preset = 'full'

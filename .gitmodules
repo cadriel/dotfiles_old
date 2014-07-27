@@ -22,6 +22,3 @@
 [submodule "vim/vim.symlink/bundle/delimitMate"]
 	path = vim/vim.symlink/bundle/delimitMate
 	url = git@github.com:Raimondi/delimitMate.git
-[submodule "vim/vim.symlink/bundle/tmuxline.vim"]
-	path = vim/vim.symlink/bundle/tmuxline.vim
-	url = git@github.com:edkolev/tmuxline.vim.git
