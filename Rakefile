@@ -24,9 +24,9 @@ task :install do
   skip_all = false
   overwrite_all = false
   backup_all = false
-  operating_systems = ['centos', 'osx', 'ubuntu']
+  excludes = ['centos', 'osx', 'ubuntu', 'subl']
 
-  linkables.not_contain(operating_systems).each do |linkable|
+  linkables.not_contain(excludes).each do |linkable|
     overwrite = false
     backup = false
 

@@ -5,7 +5,7 @@ bind-key C-a send-prefix
 set -g base-index 1
 
 # Easy config reload
-bind-key R source-file ~/.tmux.conf \; display-message "tmux.conf reloaded."
+bind-key r source-file ~/.tmux.conf \; display-message "tmux.conf reloaded."
 
 # mouse behavior
 setw -g mode-mouse on
@@ -50,6 +50,7 @@ bind-key + select-layout main-horizontal
 bind-key = select-layout main-vertical
 set-window-option -g other-pane-height 25
 set-window-option -g other-pane-width 80
+set-window-option -f pane-base-index 1
 
 bind-key a last-pane
 bind-key q display-panes
