@@ -15,7 +15,7 @@ fi
 # Install homebrew packages
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
-brew install grc coreutils spark vim brew-cask git git-flow-avh tmux maven reattach-to-user-namespace python wget zsh
+brew install grc coreutils spark vim brew-cask git git-flow-avh tmux maven grails reattach-to-user-namespace python wget zsh
 brew cask install java7
 
 exit 0
