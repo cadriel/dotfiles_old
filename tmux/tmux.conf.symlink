@@ -4,6 +4,10 @@ unbind-key C-a
 bind-key C-a send-prefix
 set -g base-index 1
 
+# easy tmux config reload
+# reload ~/.tmux.conf using PREFIX r
+bind r source-file ~/.tmux.conf \; display "Reloaded!"
+
 # mouse behavior
 setw -g mode-mouse on
 set -g mouse-select-pane on
@@ -14,7 +18,7 @@ set-option -g default-shell "/bin/zsh"
 set-option -g default-terminal screen-256color
 
 bind-key : command-prompt
-bind-key r refresh-client
+# bind-key r refresh-client
 bind-key L clear-history
 
 # use vim-like keys for splits and windows
@@ -58,15 +62,8 @@ set-window-option -g display-panes-time 1500
 
 # Status Bar
 set-option -g status-interval 1
-set-option -g status-left ''
-set-option -g status-right '%l:%M%p'
-set-window-option -g window-status-current-fg magenta
-set-option -g status-fg default
-
-# Status Bar solarized-dark (default)
-set-option -g status-bg black
-set-option -g pane-active-border-fg black
-set-option -g pane-border-fg black
+# set-option -g status-left ''
+# set-option -g status-right '%l:%M%p'
 
 # Set window notifications
 setw -g monitor-activity on
@@ -97,5 +94,17 @@ setw -g aggressive-resize on
 # Load our custom tmux theme configuration
 # if-shell "test -f ~/.dotfiles/tmuxcolors-dark.conf" "source ~/.dotfiles.tmuxcolors-dark.conf"
 if-shell "test -f ~/.dotfiles/tmux/tmuxcolors-dark.conf" "source ~/.dotfiles/tmux/tmuxcolors-dark.conf"
+
+# Define our preferred status line configuration
+set-window-option -g window-status-activity-attr none
+setw -g window-status-activity-bg black
+setw -g window-status-activity-fg magenta
+
+set -g status-justify centre
+set -g status-left "#[fg=green,bright]#H #[fg=blue,bright]:: #[fg=green,bright]#(curl icanhazip.com)"
+set -g status-right "#[fg=green,bright]up #(uptime | cut -f 5-6 -d ' ' | cut -f 1 -d ',') #[fg=blue,bright]:: #[fg=green,bright]load #(sysctl -n vm.loadavg | cut -f 2-4 -d ' ') #[fg=blue,bright]:: #[fg=green,bright]%d %b %Y%l:%M%p"
+
+setw -g window-status-format '#[fg=blue,bright]#I:#W'
+setw -g window-status-current-format '#[fg=white]#I:#W*'
 
 # source-file ~/.tmux.conf.local
