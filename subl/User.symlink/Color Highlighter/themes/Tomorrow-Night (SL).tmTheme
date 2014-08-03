@@ -25,6 +25,23 @@
 </dict>
 
 
+<dict>
+<key>name</key>
+<string>mon_color</string>
+<key>scope</key>
+<string>mcol_F0FFFFFF</string>
+<key>settings</key>
+<dict>
+<key>background</key>
+<string>#F0FFFFFF</string>
+<key>caret</key>
+<string>#0F0000FF</string>
+<key>foreground</key>
+<string>#0F0000FF</string>
+</dict>
+</dict>
+
+
 		<dict>
 			<key>settings</key>
 			<dict>
