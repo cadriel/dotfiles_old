@@ -105,8 +105,10 @@ setw -g window-status-activity-bg black
 setw -g window-status-activity-fg magenta
 
 set -g status-justify centre
+set -g status-left-length 10
+set -g status-right-length 60
 set -g status-left "#[fg=green,bright]#H #[fg=blue,bright]:: #[fg=green,bright]#(curl icanhazip.com)"
-set -g status-right "#[fg=green,bright]up #(uptime | cut -f 5-6 -d ' ' | cut -f 1 -d ',') #[fg=blue,bright]:: #[fg=green,bright]load #(sysctl -n vm.loadavg | cut -f 2-4 -d ' ') #[fg=blue,bright]:: #[fg=green,bright]%d %b %Y %l:%M%p"
+set -g status-right "#[fg=green,bright]up #(uptime | cut -f 5-6 -d ' ' | cut -f 1 -d ',') #[fg=blue,bright]:: #[fg=green,bright]load #(sysctl -n vm.loadavg | cut -f 2-4 -d ' ') #[fg=blue,bright]:: #[fg=green,bright]%d %b %l:%M%p"
 
 setw -g window-status-format '#[fg=blue,bright]#I:#W'
 setw -g window-status-current-format '#[fg=white]#I:#W*'
