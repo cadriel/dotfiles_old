@@ -1,6 +1,6 @@
 [user]
-        name = Craig Bassett
-        email = craig.bassett@gmail.com
+	name = Craig Bassett
+	email = craig.bassett@gmail.com
 [credential]
         helper = osxkeychain
 [color]
@@ -8,12 +8,12 @@
 [push]
 	default = current
 [core]
-        excludesfile = /Users/craig/.gitignore_global
+	excludesfile = /Users/craig/.gitignore_global
 [difftool "sourcetree"]
-	cmd = /usr/local/bin/ksdiff -w \"$LOCAL\" \"$REMOTE\"
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /usr/local/bin/ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 	trustExitCode = true
 [difftool "Kaleidoscope"]
         cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
