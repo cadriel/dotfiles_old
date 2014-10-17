@@ -20,8 +20,7 @@ root: ~/
 
 windows:
   - server:
-    # layout: bdae,196x52,0,0{118x52,0,0,0,77x52,119,0[77x39,119,0,4,77x12,119,40,5]}
-      layout: main-horizontal
+      layout: even-vertical
       panes:
         - coreconsole:
           - dcm
