@@ -15,7 +15,9 @@ fi
 # Install homebrew packages
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
+brew tap caskroom/fonts
 brew install grc coreutils spark vim brew-cask git git-flow-avh tmux maven grails npm reattach-to-user-namespace python wget zsh
 brew cask install java7
+brew cask install font-inconsolata
 
 exit 0
