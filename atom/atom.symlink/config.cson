@@ -1,0 +1,38 @@
+'global':
+  'core':
+    'projectHome': '/Users/craig/Development'
+    'themes': [
+      'atom-soda-dark-ui'
+      'base16-tomorrow-dark-theme'
+    ]
+    'disabledPackages': [
+      'minimap-git-diff'
+      'minimap-find-and-replace'
+      'minimap'
+      'atom-jshint'
+    ]
+  'exception-reporting':
+    'userId': '8045bf28-a9eb-c457-b557-0db597258bd7'
+  'welcome':
+    'showOnStartup': false
+  'metrics':
+    'userId': '17e44df8f07c524679efda15491291f735765a6d'
+  'editor':
+    'fontFamily': 'Inconsolata'
+    'invisibles': {}
+  'atom-beautify':
+    '_analyticsUserId': 'a12d37ee-56f9-44b0-b458-256ecb9d35e8'
+    'beautifyEntireFileOnSave': false
+  'file-icons':
+    'coloured': false
+  'project-manager': {}
+  'linter':
+    'showHighlighting': false
+'.text.xml.xsl':
+  'editor': {}
+'.source.yaml':
+  'editor': {}
+'.text.xml':
+  'editor': {}
+'.source.toml':
+  'editor': {}
