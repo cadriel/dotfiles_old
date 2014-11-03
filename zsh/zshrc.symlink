@@ -1,5 +1,6 @@
 # shortcut to this dotfiles path is $DOTFILES
 export DOTFILES=$HOME/.dotfiles
+export DOTFILES_PRIVATE=$HOME/.dotfiles_private
 
 ## Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
@@ -15,6 +16,12 @@ fi
 
 # source every .zsh file in this repo
 for config_file ($DOTFILES/**/*.zsh) source $config_file
+
+# if we have private dotfiles, source any .zsh file there too.
+if [[ -a $DOTFILES_PRIVATE ]]
+then
+  for config_file ($DOTFILES_PRIVATE/**/*.zsh) source $config_file
+fi
 
 # export bin paths
 export PATH=$DOTFILES/bin:$PATH

@@ -3,3 +3,13 @@
   'paths': [
     '/Users/craig/Development/Dell/sources/dcm'
   ]
+'dotfiles':
+  'title': 'dotfiles'
+  'paths': [
+    '/Users/craig/.dotfiles'
+  ]
+'dotfiles_private':
+  'title': 'dotfiles_private'
+  'paths': [
+    '/Users/craig/.dotfiles_private'
+  ]
