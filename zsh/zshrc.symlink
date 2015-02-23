@@ -21,6 +21,7 @@ for config_file ($DOTFILES/**/*.zsh) source $config_file
 if [[ -a $DOTFILES_PRIVATE ]]
 then
   for config_file ($DOTFILES_PRIVATE/**/*.zsh) source $config_file
+  export PATH=$DOTFILES_PRIVATE/bin:$PATH
 fi
 
 # export bin paths
