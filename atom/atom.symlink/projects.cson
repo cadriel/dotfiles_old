@@ -1,15 +1,25 @@
-'dcm':
-  'title': 'dcm'
-  'paths': [
-    '/Users/craig/Development/Dell/sources/dcm'
+dcm:
+  title: "dcm"
+  paths: [
+    "/Users/craig/Development/Dell/sources/dcm"
   ]
-'dotfiles':
-  'title': 'dotfiles'
-  'paths': [
-    '/Users/craig/.dotfiles'
+dotfiles:
+  title: "dotfiles"
+  paths: [
+    "/Users/craig/.dotfiles"
   ]
-'dotfiles_private':
-  'title': 'dotfiles_private'
-  'paths': [
-    '/Users/craig/.dotfiles_private'
+dotfiles_private:
+  title: "dotfiles_private"
+  paths: [
+    "/Users/craig/.dotfiles_private"
+  ]
+"tel.js":
+  title: "tel.js"
+  paths: [
+    "/Users/craig/Development/Personal/sources/tel.js"
+  ]
+"dcm-angular-ui":
+  title: "dcm-angular-ui"
+  paths: [
+    "/Users/craig/Development/Dell/sources/dcm-angular-ui"
   ]

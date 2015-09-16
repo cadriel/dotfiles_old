@@ -1,14 +1,11 @@
 "*":
   core:
     disabledPackages: [
-      "minimap-git-diff"
-      "minimap-find-and-replace"
-      "minimap"
       "atom-jshint"
       "autocomplete"
     ]
     themes: [
-      "atom-soda-dark-ui"
+      "one-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
     projectHome: "/Users/craig/Development"
@@ -22,10 +19,20 @@
     fontFamily: "Inconsolata"
     scrollPastEnd: true
     invisibles: {}
+    fontSize: 15
   "atom-beautify":
     _analyticsUserId: "a12d37ee-56f9-44b0-b458-256ecb9d35e8"
     beautifyEntireFileOnSave: false
   linter:
     showHighlighting: false
+    subtleLinterErrors: [
+      "jshint"
+    ]
   "tree-view":
     hideVcsIgnoredFiles: true
+  minimap:
+    plugins:
+      "git-diff": true
+      "find-and-replace": true
+  "autocomplete-plus": {}
+  "one-dark-ui": {}
