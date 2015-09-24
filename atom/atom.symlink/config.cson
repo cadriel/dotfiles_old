@@ -36,3 +36,5 @@
       "find-and-replace": true
   "autocomplete-plus": {}
   "one-dark-ui": {}
+  "linter-jscs":
+    onlyConfig: true
