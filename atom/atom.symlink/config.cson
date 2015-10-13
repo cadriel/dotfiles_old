@@ -1,7 +1,6 @@
 "*":
   core:
     disabledPackages: [
-      "atom-jshint"
       "autocomplete"
     ]
     themes: [
@@ -38,3 +37,5 @@
   "one-dark-ui": {}
   "linter-jscs":
     onlyConfig: true
+  "linter-jshint":
+    disableWhenNoJshintrcFileInPath: true

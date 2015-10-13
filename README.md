@@ -7,10 +7,12 @@ This is a culmination of [holman](https://github.com/holman) and [aniket](https:
 Installation is currently a couple of steps dependant on your intent;
 
 ### Base symlink and install
-1. Clone this repo
+1. Clone this repo & its submodules.
    `git clone git@github.com:cadriel/dotfiles.git ~/.dotfiles`
 2. `cd ~/.dotfiles`
-3. `rake install`
+3. `git submodule init`
+4. `git submodule update --init`
+5. `rake install`
 
 ### Setup and install dependencies
 
