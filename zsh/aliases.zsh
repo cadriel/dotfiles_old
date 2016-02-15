@@ -1,6 +1,7 @@
 alias reload!='. ~/.zshrc'
 alias h='cd ~/'
 alias dcm='cd ~/Development/Dell/sources/dcm'
+alias edc='cd ~/Development/Dell/sources/edc'
 alias dcm-build='./esbuild.sh --clean --install --bundle'
 alias dcm-buildlaunch='./esbuild.sh --clean --install --bundle && ./eslaunch.sh -v --pretest'
 alias dcm-launch='./eslaunch.sh -v --pretest'
