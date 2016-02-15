@@ -1,41 +1,43 @@
 "*":
+  "atom-beautify":
+    _analyticsUserId: "a12d37ee-56f9-44b0-b458-256ecb9d35e8"
+    beautifyEntireFileOnSave: false
+  "atom-typescript": {}
+  "autocomplete-plus": {}
   core:
     disabledPackages: [
       "autocomplete"
     ]
+    excludeVcsIgnoredPaths: false
+    projectHome: "/Users/craig/Development"
     themes: [
       "one-dark-ui"
       "base16-tomorrow-dark-theme"
     ]
-    projectHome: "/Users/craig/Development"
-  "exception-reporting":
-    userId: "8045bf28-a9eb-c457-b557-0db597258bd7"
-  welcome:
-    showOnStartup: false
-  metrics:
-    userId: "17e44df8f07c524679efda15491291f735765a6d"
   editor:
     fontFamily: "Inconsolata"
-    scrollPastEnd: true
-    invisibles: {}
     fontSize: 15
-  "atom-beautify":
-    _analyticsUserId: "a12d37ee-56f9-44b0-b458-256ecb9d35e8"
-    beautifyEntireFileOnSave: false
+    invisibles: {}
+    scrollPastEnd: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "8045bf28-a9eb-c457-b557-0db597258bd7"
   linter:
     showHighlighting: false
     subtleLinterErrors: [
       "jshint"
     ]
-  "tree-view":
-    hideVcsIgnoredFiles: true
-  minimap:
-    plugins:
-      "git-diff": true
-      "find-and-replace": true
-  "autocomplete-plus": {}
-  "one-dark-ui": {}
   "linter-jscs":
     onlyConfig: true
   "linter-jshint":
     disableWhenNoJshintrcFileInPath: true
+  metrics:
+    userId: "17e44df8f07c524679efda15491291f735765a6d"
+  minimap:
+    plugins:
+      "find-and-replace": true
+      "git-diff": true
+  "one-dark-ui": {}
+  "tree-view": {}
+  welcome:
+    showOnStartup: false

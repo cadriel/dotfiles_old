@@ -2,6 +2,8 @@
 
 This is a culmination of [holman](https://github.com/holman) and [aniket](https://github.com/aniketpant) dotfiles combined into what I need. I researched a bunch of dotfiles solutions and this is what I've come up with thus far.
 
+Also uses Mathias Bynen's dotfiles as reference, in particular the osx install defaults; [mathiasbynens](https://github.com/mathiasbynens/dotfiles).
+
 ## Install
 
 Installation is currently a couple of steps dependant on your intent;

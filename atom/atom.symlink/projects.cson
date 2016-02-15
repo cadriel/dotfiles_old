@@ -23,3 +23,13 @@ dotfiles_private:
   paths: [
     "/Users/craig/Development/Dell/sources/dcm-angular-ui"
   ]
+"es-fe-patterns":
+  title: "es-fe-patterns"
+  paths: [
+    "/Users/craig/Development/Dell/sources/es-fe-patterns"
+  ]
+edc:
+  title: "edc"
+  paths: [
+    "/Users/craig/Development/Dell/sources/edc"
+  ]
