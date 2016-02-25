@@ -6,6 +6,7 @@
   'linter'
   'linter-jscs'
   'linter-jshint'
+  'linter-sass-lint'
   'minimap'
   'minimap-find-and-replace'
   'minimap-git-diff'
