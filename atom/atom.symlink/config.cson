@@ -16,7 +16,7 @@
     ]
   editor:
     fontFamily: "Inconsolata"
-    fontSize: 15
+    fontSize: 16
     invisibles: {}
     scrollPastEnd: true
     tabType: "soft"
@@ -31,12 +31,15 @@
     onlyConfig: true
   "linter-jshint":
     disableWhenNoJshintrcFileInPath: true
+  "linter-tslint": {}
   metrics:
     userId: "17e44df8f07c524679efda15491291f735765a6d"
   minimap:
     plugins:
       "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
       "git-diff": true
+      "git-diffDecorationsZIndex": 0
   "one-dark-ui": {}
   "tree-view": {}
   welcome:
