@@ -16,8 +16,18 @@ fi
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 brew tap caskroom/fonts
-brew install grc coreutils spark vim brew-cask git git-flow-avh tmux maven grails reattach-to-user-namespace python wget zsh nodenv
+brew tap osx-cross/avr
+
+# Generic
+brew install grc coreutils spark vim brew-cask tmux wget zsh
+
+# Dev
+brew install maven nodenv python git git-flow-avh avr-libc dfu-programmer perl
 brew cask install java7
+brew cask install java8
+brew cask install keybase
+
+# Fonts
 brew cask install font-inconsolata
 
 exit 0
