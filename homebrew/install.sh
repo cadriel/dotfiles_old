@@ -23,9 +23,8 @@ brew install grc coreutils spark vim brew-cask tmux wget zsh
 
 # Dev
 brew install maven nodenv python git git-flow-avh avr-libc dfu-programmer perl
-brew cask install java7
-brew cask install java8
-brew cask install keybase
+brew cask install java7 java8
+brew cask install keybase spectacle
 
 # Fonts
 brew cask install font-inconsolata
