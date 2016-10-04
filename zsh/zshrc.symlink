@@ -28,8 +28,8 @@ then
 fi
 
 # initialize autocomplete here, otherwise function won't be loaded
-autoload -U compinit
-compinit
+autoload -Uz compinit
+compinit -i
 
 # load every completion after autocomplete loads
 # We currently have none in our repo, so commenting this out.

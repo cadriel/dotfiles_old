@@ -8,22 +8,24 @@
 # Check for Homebrew
 if test ! $(which brew)
 then
-  echo "  Installing Homebrew for you."
+  echo "  Installing Homebrew for you. Please hit <return> to continue."
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" > /tmp/homebrew-install.log
 fi
 
 # Install homebrew packages
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
 brew tap caskroom/versions
 brew tap caskroom/fonts
 brew tap osx-cross/avr
 
+# Java
+brew cask install java7
+
 # Generic
-brew install grc coreutils spark vim brew-cask tmux wget zsh
+brew install grc coreutils spark vim tmux wget zsh
 
 # Dev
 brew install maven nodenv python git git-flow-avh avr-libc dfu-programmer perl
-brew cask install java7 java8
 brew cask install keybase spectacle
 
 # Fonts
