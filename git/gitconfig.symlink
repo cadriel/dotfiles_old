@@ -28,3 +28,5 @@
         prompt = false
 [merge]
         tool = Kaleidoscope
+[commit]
+	template = /Users/craig/.stCommitMsg
