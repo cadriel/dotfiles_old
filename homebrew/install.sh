@@ -19,14 +19,14 @@ brew tap caskroom/fonts
 brew tap osx-cross/avr
 
 # Java
-brew cask install java7
+# brew cask install java7
 
 # Generic
 brew install grc coreutils spark vim tmux wget zsh
 
 # Dev
-brew install maven nodenv python git git-flow-avh avr-libc dfu-programmer perl
-brew cask install keybase spectacle
+brew install nodenv python git git-flow-avh avr-libc dfu-programmer perl
+brew cask install spectacle
 
 # Fonts
 brew cask install font-inconsolata
