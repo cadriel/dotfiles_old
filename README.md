@@ -24,7 +24,11 @@ The script should already be in your path provided you've already run `rake inst
 
 Note that the script is setup to run the homebrew installation first to avoid dependency issues with your other installers.
 
-`~/.dotfiles/script/install`, will install any dependencies you've defined in the `<topic>/install.sh` files. This includes setting up any osx defaults in the `~/.dotfiles/osx/install.sh` script.
+`~/.dotfiles/script/install`, will install any dependencies you've defined in the `<topic>/install.sh` files.
+
+#### MacOs Defaults
+Install scripts for MacOs are split into two. Global parameters we'd want on all macs are inside the install.sh script, however
+any machine specific paremeters are found within other scripts in the same folder. These should be run manually for each machine.
 
 ## Components
 

@@ -10,12 +10,6 @@ osascript -e 'tell application "System Preferences" to quit'
 # General UI/UX                                                               #
 ###############################################################################
 
-# Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "LdrSnoke"
-sudo scutil --set HostName "LdrSnoke"
-sudo scutil --set LocalHostName "LdrSnoke"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "LdrSnoke"
-
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 
