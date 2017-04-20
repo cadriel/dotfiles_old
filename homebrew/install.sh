@@ -26,7 +26,6 @@ brew install grc coreutils spark vim tmux wget zsh
 
 # Dev
 brew install nodenv python git git-flow-avh avr-libc dfu-programmer perl
-brew cask install spectacle
 
 # Fonts
 brew cask install font-inconsolata
