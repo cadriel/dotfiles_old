@@ -30,4 +30,7 @@ brew install nodenv python git git-flow-avh avr-libc dfu-programmer perl
 # Fonts
 brew cask install font-inconsolata
 
+# Apps
+brew cask install iina
+
 exit 0
