@@ -25,7 +25,7 @@ brew tap osx-cross/avr
 brew install grc coreutils spark vim tmux wget zsh
 
 # Dev
-brew install nodenv python git git-flow-avh avr-libc dfu-programmer perl
+brew install nodenv python git git-flow-avh avr-gcc dfu-programmer perl
 
 # Fonts
 brew cask install font-inconsolata
