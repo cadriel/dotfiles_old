@@ -14,7 +14,7 @@ fi
 
 # Install homebrew packages
 brew tap homebrew/cask
-#brew tap caskroom/versions
+brew tap homebrew/cask-versions
 brew tap homebrew/cask-fonts
 brew tap osx-cross/avr
 
