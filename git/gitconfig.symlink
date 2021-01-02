@@ -11,5 +11,5 @@
 	excludesfile = /Users/craig/.gitignore_global
 [commit]
 	template = /Users/craig/.stCommitMsg
-[init]
-	defaultBranch = ""
+[pull]
+	rebase = true
