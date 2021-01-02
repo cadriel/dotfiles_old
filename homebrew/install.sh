@@ -9,17 +9,17 @@
 if test ! $(which brew)
 then
   echo "  Installing Homebrew for you. Please hit <return> to continue."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" > /tmp/homebrew-install.log
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 # Install homebrew packages
-brew tap caskroom/cask
-brew tap caskroom/versions
-brew tap caskroom/fonts
+brew tap homebrew/cask
+#brew tap caskroom/versions
+brew tap homebrew/cask-fonts
 brew tap osx-cross/avr
 
 # Java
-# brew cask install java7
+# brew install --cask java7
 
 # Generic
 brew install grc coreutils spark vim tmux wget zsh
@@ -28,9 +28,9 @@ brew install grc coreutils spark vim tmux wget zsh
 brew install nodenv python git git-flow-avh avr-gcc dfu-programmer perl
 
 # Fonts
-brew cask install font-inconsolata
+brew install --cask font-inconsolata
 
 # Apps
-# brew cask install iina
+# brew install --cask iina
 
 exit 0
