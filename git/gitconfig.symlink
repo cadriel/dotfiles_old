@@ -11,5 +11,10 @@
 	excludesfile = /Users/craig/.gitignore_global
 [commit]
 	template = /Users/craig/.stCommitMsg
+	gpgSign = false
 [pull]
 	rebase = true
+[init]
+	defaultBranch = ""
+[alias]
+	c = commit -s
