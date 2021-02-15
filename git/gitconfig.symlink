@@ -15,6 +15,6 @@
 [pull]
 	rebase = true
 [init]
-	defaultBranch = ""
+	defaultBranch = master
 [alias]
 	c = commit -s
