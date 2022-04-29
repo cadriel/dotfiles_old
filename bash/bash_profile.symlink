@@ -1,5 +1,2 @@
 # Add homebrew to the path.
 export PATH=/usr/local/bin:$PATH
-
-# Java
-export JAVA_HOME=`/usr/libexec/java_home -v 1.7.0` # Force 1.7 to be our default.
